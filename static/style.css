@@ -1,0 +1,132 @@
+body{
+	font-size: large;
+	font-family: "Lucida Console", Monaco, monospace;
+	margin:3em;
+}
+html{
+	animation: pulse 5s infinite;
+}
+@keyframes pulse {
+	0% {
+		background-color: #e0ded9;
+	}
+	33% {
+		background-color: #eae8e3;
+	}
+	66% {
+		background-color: #e8decc;
+	}
+	100% {
+		background-color: #e0ded9;
+	}
+}
+nav{
+	font-size: x-large;
+	padding-bottom: 2%;
+}
+a,p,div,html{
+	/* cursor: url("http://i64.tinypic.com/29bg6x3.png"),auto; */
+	cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E %3Ctext x='0' y='35' font-family='Verdana' font-size='27'%3E&%23128122;%3C/text%3E %3C/svg%3E"), auto;
+}
+a{
+	color:black;
+}
+a:hover{
+	text-decoration: line-through;
+}
+.img-fly{
+	position: fixed;
+	top: 30%;
+	left: 100%;
+	width: 175px;
+	height: 262px;
+	background: url(https://raw.githubusercontent.com/argovaerts/argovaerts.github.io/master/Robert_Delaunay_-_Le_Po%C3%A8te_Philippe_Soupault.jpg);
+	background-size: 100% 100%;
+	-webkit-animation: fly 7s linear infinite;
+	animation: fly 7s linear infinite;
+	-webkit-filter: hue-rotate(90deg);
+	filter: hue-rotate(90deg);
+	border-radius: 25px;
+}
+@-webkit-keyframes fly {
+	0% { left: 100%; }
+	70% { left: -175px; -webkit-transform: rotate(360deg); }
+	100% { left: -175px; }
+}
+@keyframes fly {
+	0% { left: 100%; }
+	70%{ left: -300px; -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+	100% { left: -300px; }
+}
+@-moz-keyframes fly {
+	0% { left: 100%; }
+	70%, 100% { left: -300px; -moz-transform: rotate(360deg);}
+	100% { left: -300px; }
+}
+.no-bullets{
+  	list-style-type: none;
+}
+.no-bullets li{
+	margin: 1%;
+}
+.balk a{
+	text-decoration: none;
+}
+.balk a:hover{
+	text-decoration: line-through;
+}
+.balk{
+	margin-top: 5%;
+	text-align: center;
+}
+.small-date{
+	font-size: small;
+	font-style: italic;
+}
+.continue{
+	font-size: small;
+	text-decoration: none;
+	font-style: oblique;
+}
+
+h3 a{
+	text-decoration: none;
+}
+.license{
+	margin: 2%;
+	text-align: center;
+	font-size: smaller;
+}
+.current{
+	text-decoration: underline;
+}
+.pages li a{
+	font-size: larger;
+	text-decoration: none;
+}
+.pages li{
+	display: inline-block;
+}
+.pages{
+	padding-bottom: 0.1%;
+	text-align: center;
+}
+.current:hover, .pages li a:hover{
+	text-decoration: line-through;
+}
+.reactions ul{
+	list-style-type: none;
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+.reactions form{
+	-webkit-column-span: all; /* Chrome, Safari, Opera */
+    column-span: all;
+}
+.smile{
+	font-size: larger;
+}
