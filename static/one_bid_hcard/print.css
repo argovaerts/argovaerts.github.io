@@ -1,0 +1,39 @@
+* {
+    background-color: #fff !important;
+    color: #222;
+    font-size: 11pt !important;
+    font-family: Monotype Grotesque !important;
+}
+/*html {
+    -ms-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	top: 1.5in;
+	left: -1in;
+	margin-top:30%;
+}*/
+#preheader,#languages,.screen {
+	display:none;
+}
+.print{
+	display:block;
+}
+
+@page {
+    margin: 0.5in;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid !important;
+}
+
+p, li, blockquote, figure, img {
+    page-break-inside: avoid !important;
+}
+#communicate, pre{
+	overflow: visible;
+}
+pre{
+	white-space: no-wrap;
+}
+
