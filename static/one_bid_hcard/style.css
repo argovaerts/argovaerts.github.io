@@ -34,6 +34,8 @@ html{
 	font-style:italic;
 	float:right;
 	padding-right:10px;
+	padding-bottom:.1em;
+	padding-top:.1em;
 }
 #setClock{
 	padding-left:1em;
@@ -41,36 +43,42 @@ html{
 body{
 	margin:0;
 }
-@media screen and (min-width: 800px){
-	header{
-		display:flex;
-		flex-direction: row-reverse;
-		justify-content: flex-end;
-	}
-	main{
-		 display: flex;
-		 justify-content: space-around;
-		 flex-wrap: wrap;
-	}
+main{
+	 display: flex;
+	 justify-content: space-around;
+	 flex-wrap: wrap;
+}
+header{
+	display:flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
 }
 @media screen and (max-width: 800px){
+	#printNotice{
+		display:none;
+	}
+}
+@media screen and (max-width: 700px){
 	header{
-		display:flex;
-		flex-direction:column;
-		justify-content: flex-end;
+		flex-direction: column;
+		margin:auto;
+		width: 50%;
 	}
-	main{
-		 display: flex;
-		 justify-content: space-around;
-		 flex-direction:column;
+}
+@media screen and (max-width: 280px){
+	#setClock{
+		display:none;
 	}
+}
+main{
+	margin:auto;
 }
 img{
-	width: 10em;
-	height: auto;
+	width:75%;
+	max-width:500px;
 }
 section{
-	width:15%;
+	width:16em;
 }
 abbr{
 	text-decoration:none;
